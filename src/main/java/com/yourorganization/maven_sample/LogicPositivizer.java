@@ -19,6 +19,7 @@ public class LogicPositivizer {
     public static void main(String[] args) {
         // JavaParser has a minimal logging class that normally logs nothing.
         // Let's ask it to write to standard out:
+        System.out.println("hello world");
         Log.setAdapter(new Log.StandardOutStandardErrorAdapter());
         
         // SourceRoot is a tool that read and writes Java files from packages on a certain root directory.
