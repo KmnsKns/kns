@@ -1,6 +1,6 @@
 node{
     def maven= tool name:"maven3.9.2"
-    buildName 'SRI - ${ BUILD_NUMBER}'
+    buildName 'SRI - ${BUILD_NUMBER}'
     buildDescription 'Pipeline scripted'
     echo "Node name : ${env.NODE_NAME}"
 
