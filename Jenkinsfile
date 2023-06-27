@@ -1,9 +1,9 @@
 node{
     def maven= tool name:"maven3.9.2"
 
-    echo"Node name :"${env.NODE_NAME}"
+    echo "Node name : ${env.NODE_NAME}"
 
-    echo"Job name :"${env.JOB_NAME}"
+    echo "Job name : ${env.JOB_NAME}"
     
     stage('GIT CHECKOUT')
     {
