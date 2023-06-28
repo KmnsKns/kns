@@ -15,7 +15,7 @@
         <!-- Tell Maven we want to use Java 8 -->
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <sonar.host.url>http://18.224.21.137:9000/</sonar.host.url>
+        <sonar.host.url>http://3.15.209.239:9000/</sonar.host.url>
         <sonar.login>admin</sonar.login>
         <sonar.password>admin</sonar.password>
         <!-- Tell Maven to treat all source files as UTF-8 -->
