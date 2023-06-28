@@ -1,14 +1,18 @@
-pipeline
- {
-   agent any
-   stages
-  {
-   stage('GIT CHECKOUT')
-{
-steps
-{
-        git credentialsId: 'bbacb9bc-823f-4fc0-af56-7cd9a2a50f98', url: 'https://github.com/KmnsKns/kns.git'
-}
-}
-}
-}
+pipeline {
+    agent any
+    tools {
+        maven "maven3.9.2"
+    }
+    stages {
+        stage('GIT CHECKOUT') {
+            steps {
+                git url:'https://github.com/KmnsKns/kns.git'
+            }
+            }
+        stage('BUILD') {
+            steps {
+                sh 'mvn clean package'
+            }
+        }
+        }
+    }
