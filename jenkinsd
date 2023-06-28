@@ -7,6 +7,10 @@ pipeline {
   buildDiscarder logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '', numToKeepStr: '5')
   timestamps ()
 }
+triggers {
+  cron '* * * * *'
+  pollSCM '* * * * *'
+}
 
     stages {
         stage('GIT CHECKOUT') {
